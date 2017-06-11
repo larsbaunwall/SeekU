@@ -10,7 +10,7 @@ namespace SeekU.StructureMap
         protected IContainer Container;
         private readonly bool _supperssDisposal;
 
-        public SeekUStructureMapResolver(bool suppressDisposal = true) : this(ObjectFactory.Container)
+        public SeekUStructureMapResolver(bool suppressDisposal = true) : this(new Container())
         {
             _supperssDisposal = suppressDisposal;
         }
